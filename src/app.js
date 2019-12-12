@@ -61,7 +61,8 @@ app.get('/weather', (req, res) => {
                     res.send({
                         location,
                         temperature: forecastData.temperature,
-                        precipitation: forecastData.precipitation
+                        precipitation: forecastData.precipitation,
+                        feelsLike: forecastData.feelsLike
                     })
                 }
             })
